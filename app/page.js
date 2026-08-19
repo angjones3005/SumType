@@ -35,7 +35,7 @@ export default function HomePage() {
     <main>
       <div className="wrap">
         <section className="hero">
-          <h1>My notes.</h1>
+          <h1>My notes on things I'm doing.</h1>
           <pre className="hero-code">
             <code>
               <span className="code-keyword">data</span>{" Activity = Work | DrinkCoffee\n\n"}
