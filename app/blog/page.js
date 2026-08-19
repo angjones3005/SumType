@@ -102,7 +102,9 @@ showDay Sunday   = "Think about things."`}</code></pre>
               The broader lesson is deliberately narrow: general-purpose modular verification is valuable, but some protocols have enough structure to admit exact decompositions with no solver in the loop. STP is one such case. The useful engineering move is to identify the boundary, validate the precondition, and pass only the summary the local computation actually needs.
             </p>
 
-            <div className="post-footer-note">Based on “Boundary Sufficiency: Local Validation of Spanning Tree Protocol Configurations Without Full-Network Recomputation,” draft v0.3.</div>
+            <div className="post-footer-note">
+              <a href="/blog/loopguard">Read the second post: A Snapshot Safety Theorem for LoopGuard</a>
+            </div>
           </div>
         </article>
       </div>
