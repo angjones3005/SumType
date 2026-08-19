@@ -43,6 +43,7 @@ export default function AboutPage() {
               Haskell give me a way to push the same root-cause discipline further upstream: to
               ask what a change can do before I let it touch a live network.
             </p>
+            {/*
             <p>
               <strong>Specter</strong> grew out of the practical side of that frustration. I wanted a
               terminal, file browser, and code editor that matched the way I actually work: SSH
@@ -54,6 +55,7 @@ export default function AboutPage() {
             <a className="tip-btn" href="https://dawnrail.github.io/Dawnrail/">
               <span className="sq"></span> Try Specter
             </a>
+            */}
           </div>
         </div>
       </div>
