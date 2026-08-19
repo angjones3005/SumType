@@ -35,6 +35,7 @@ export default function HomePage() {
     <main>
       <div className="wrap">
         <section className="hero">
+          <h1>Notes on things.</h1>
           <pre className="hero-code">
             <code>
               <span className="code-keyword">data</span>{" Weekend = Saturday | Sunday\n\n"}

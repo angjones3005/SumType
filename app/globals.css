@@ -118,10 +118,10 @@ nav a.active { color: var(--text); border-color: var(--accent); }
 .hero p { margin-top: 18px; color: var(--text-muted); font-size: 16px; max-width: 520px; }
 .hero-code {
   margin: 0;
-  padding: 18px 16px;
+  padding: 0;
   overflow-x: auto;
-  background: #FFFFFF;
-  border-top: 2px solid #3D8DDD;
+  background: transparent;
+  border-top: 0;
   color: var(--text);
   font-family: 'IBM Plex Mono', monospace;
   font-size: 14px;
