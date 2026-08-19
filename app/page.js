@@ -38,10 +38,18 @@ export default function HomePage() {
           <h1>My notes.</h1>
           <pre className="hero-code">
             <code>
-              <span className="code-keyword">data</span>{" Weekend = Saturday | Sunday\n\n"}
-              <span className="code-type">showDay</span> :: <span className="code-type">Weekend</span> -&gt; <span className="code-type">String</span>{"\n"}
-              <span className="code-type">showDay</span> Saturday = <span className="code-string">&quot;Drink some coffee.&quot;</span>{"\n"}
-              <span className="code-type">showDay</span> Sunday   = <span className="code-string">&quot;Think about things.&quot;</span>
+              <span className="code-keyword">data</span>{" Activity = Work | DrinkCoffee\n\n"}
+              <span className="code-keyword">data</span>{" Tree a = Leaf a\n            | Node (Tree a) (Tree a)\n\n"}
+              <span className="code-type">weekdayPlan</span> :: <span className="code-type">Tree Activity</span>{"\n"}
+              <span className="code-type">weekdayPlan</span> = Node{"\n  "}
+              (Node (Leaf DrinkCoffee) (Leaf Work)){"\n  "}
+              (Leaf DrinkCoffee){"\n\n"}
+              <span className="code-type">describe</span> :: <span className="code-type">Activity</span> -&gt; <span className="code-type">String</span>{"\n"}
+              <span className="code-type">describe</span> Work        = <span className="code-string">&quot;Time to work.&quot;</span>{"\n"}
+              <span className="code-type">describe</span> DrinkCoffee = <span className="code-string">&quot;Time to drink some coffee.&quot;</span>{"\n\n"}
+              <span className="code-type">runTree</span> :: <span className="code-type">Tree Activity</span> -&gt; [<span className="code-type">String</span>]{"\n"}
+              <span className="code-type">runTree</span> (Leaf a)   = [describe a]{"\n"}
+              <span className="code-type">runTree</span> (Node l r) = runTree l ++ runTree r
             </code>
           </pre>
         </section>
