@@ -14,7 +14,6 @@ export default function BlogPage() {
             <p className="post-dek">
               A practical summary of a formal result about validating local STP changes without recomputing the whole network.
             </p>
-            <div className="post-meta">DRAFT V0.3 <span>·</span> FMANO 2027 <span>·</span> 12 MIN READ</div>
           </header>
 
           <div className="post-content">
@@ -50,6 +49,32 @@ export default function BlogPage() {
               <strong>Boundary sufficiency.</strong> If the elected root lies in <em>R</em>, port roles on switches in <em>N</em> are determined by <em>N</em>'s topology, <em>N</em>'s configuration, and the vector of root-path distances at <em>B</em>. No other information about <em>R</em> is required.
             </div>
 
+            <figure className="paper-figure">
+              <div className="boundary-diagram">
+                <div className="diagram-region region-n">
+                  <span className="diagram-label">N</span>
+                  <span className="diagram-node node-n-one">n1</span>
+                  <span className="diagram-node node-n-two">n2</span>
+                  <span className="diagram-line internal-line one"></span>
+                  <span className="diagram-line internal-line two"></span>
+                </div>
+                <div className="boundary-links">
+                  <span></span>
+                  <span></span>
+                </div>
+                <div className="diagram-region region-r">
+                  <span className="diagram-label">R</span>
+                  <span className="diagram-node node-b-one">b1</span>
+                  <span className="diagram-node node-b-two">b2</span>
+                  <span className="diagram-node node-root">root</span>
+                  <span className="diagram-line r-line one"></span>
+                  <span className="diagram-line r-line two"></span>
+                  <span className="diagram-line r-line three"></span>
+                </div>
+              </div>
+              <figcaption>Figure 1. A local region <em>N</em> can see the rest of the network <em>R</em> through boundary distances at <em>B</em>.</figcaption>
+            </figure>
+
             <h2>Mechanized in Haskell</h2>
             <p>
               The result was mechanized in Haskell using the same relaxation and role-assignment functions for both the monolithic computation and the local witness function. This matters because agreement cannot be dismissed as an artifact of two independently implemented algorithms.
@@ -63,6 +88,27 @@ export default function BlogPage() {
 showDay :: Weekend -> String
 showDay Saturday = "Drink some coffee."
 showDay Sunday   = "Think about things."`}</code></pre>
+
+            <figure className="paper-figure">
+              <div className="ring-diagram">
+                <span className="ring-node ring-a">A</span>
+                <span className="ring-node ring-b">B</span>
+                <span className="ring-node ring-c">C</span>
+                <span className="ring-node ring-d">D</span>
+                <span className="ring-node ring-e">E</span>
+                <span className="ring-node ring-f">F</span>
+                <span className="ring-edge edge-ab"></span>
+                <span className="ring-edge edge-bc"></span>
+                <span className="ring-edge edge-cd"></span>
+                <span className="ring-edge edge-de"></span>
+                <span className="ring-edge edge-ef"></span>
+                <span className="ring-edge edge-fa"></span>
+                <span className="cut-label cut-left">cut</span>
+                <span className="cut-label cut-right">cut</span>
+                <span className="ring-root-label">root</span>
+              </div>
+              <figcaption>Figure 2. A six-switch ring split into local region <em>N</em> and remote region <em>R</em>, with two cut edges and the root in <em>R</em>.</figcaption>
+            </figure>
 
             <h2>The measured speedup</h2>
             <p>
@@ -79,6 +125,32 @@ showDay Sunday   = "Think about things."`}</code></pre>
             <p>
               This rules out any fixed-radius static guarantee in the failure case. It does not rule out incremental shortest-path algorithms that touch only switches whose distances actually change; that is a different, output-sensitive problem left for future work.
             </p>
+
+            <figure className="paper-figure">
+              <div className="chain-diagram">
+                <span className="chain-label chain-before">root = r5 (far end)</span>
+                <span className="chain-label chain-after">root migrated into N</span>
+                <div className="chain-row">
+                  <span className="chain-node local">N1</span>
+                  <span className="chain-node">r0</span>
+                  <span className="chain-node">r1</span>
+                  <span className="chain-node">r2</span>
+                  <span className="chain-node">r3</span>
+                  <span className="chain-node">r4</span>
+                  <span className="chain-node root-old">r5</span>
+                </div>
+                <div className="chain-row second">
+                  <span className="chain-node local root-new">N1</span>
+                  <span className="chain-node">r0</span>
+                  <span className="chain-node">r1</span>
+                  <span className="chain-node">r2</span>
+                  <span className="chain-node">r3</span>
+                  <span className="chain-node changed">r4</span>
+                  <span className="chain-node">r5</span>
+                </div>
+              </div>
+              <figcaption>Figure 3. Root migration can change a port role arbitrarily far from the boundary.</figcaption>
+            </figure>
 
             <h2>Limitations and next steps</h2>
             <p>
