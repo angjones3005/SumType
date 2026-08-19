@@ -5,16 +5,16 @@ export const metadata = {
 
 const blogPosts = [
   {
-    tag: "FORMAL METHODS",
-    title: "Boundary Sufficiency: Local Validation of Spanning Tree Protocol Configurations Without Full-Network Recomputation",
-    blurb: "A precise theorem showing when local STP roles can be validated from a boundary distance vector, with a Haskell mechanization and 1,300x benchmark result.",
-    href: "/blog/boundary-sufficiency",
-  },
-  {
     tag: "NETWORK VERIFICATION",
     title: "A Snapshot Safety Theorem for LoopGuard in Spanning Tree Protocol",
     blurb: "Why a memoryless LoopGuard model turns a temporal safety question into an exhaustive check over reachable failure snapshots.",
     href: "/blog/loopguard",
+  },
+  {
+    tag: "FORMAL METHODS",
+    title: "Boundary Sufficiency: Local Validation of Spanning Tree Protocol Configurations Without Full-Network Recomputation",
+    blurb: "A precise theorem showing when local STP roles can be validated from a boundary distance vector, with a Haskell mechanization and 1,300x benchmark result.",
+    href: "/blog/boundary-sufficiency",
   },
 ];
 
