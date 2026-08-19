@@ -37,7 +37,6 @@ export default function HomePage() {
         <section className="hero">
           <pre className="hero-code">
             <code>
-              <span className="code-muted">haskell</span>{"\n\n"}
               <span className="code-keyword">data</span>{" Weekend = Saturday | Sunday\n\n"}
               <span className="code-type">showDay</span> :: <span className="code-type">Weekend</span> -&gt; <span className="code-type">String</span>{"\n"}
               <span className="code-type">showDay</span> Saturday = <span className="code-string">&quot;Drink some coffee.&quot;</span>{"\n"}
