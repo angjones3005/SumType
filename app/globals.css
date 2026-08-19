@@ -272,7 +272,9 @@ footer { border-top: 1px solid var(--border); background: var(--bg-alt); padding
 .footer-right a:hover { color: var(--text); }
 
 @media (max-width: 760px) {
-  .nav-inner nav { display: none; }
+  .nav-inner { padding: 14px 20px; }
+  nav ul { gap: 16px; }
+  nav a { font-size: 13px; }
   .grid { grid-template-columns: 1fr; }
   .about-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; text-align: center; }
