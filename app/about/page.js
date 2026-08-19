@@ -35,28 +35,35 @@ export default function AboutPage() {
 
           <div className="about-copy">
             <p>
-              My name&apos;s Angelo, and this blog started as notes on games, but it&apos;s turned into
-              something closer to a build log.
+              Infrastructure and network-focused professional with hands-on experience designing,
+              troubleshooting, migrating, and modernizing enterprise technology environments.
             </p>
             <p>
-              I work with network infrastructure day to day, real switches, real SSH sessions,
-              real config that breaks in real ways. Every terminal tool I tried felt like it was
-              built for someone else&apos;s workflow. So I started building my own.
+              My work has included core network migrations, VLAN and gateway redesigns, firewall
+              administration, spanning-tree remediation, network observability implementations,
+              disaster recovery automation, and multi-site infrastructure support. I enjoy
+              understanding systems end to end and applying that knowledge to improve reliability,
+              security, and operational efficiency.
             </p>
             <p>
-              That became <strong>Specter</strong>, a terminal, file browser, and code editor in one app,
-              designed for the way I actually work: SSH into something, browse the filesystem,
-              edit a file, all without hopping between five different windows.
+              I also have experience supporting Cisco, Palo Alto, Fortinet, Azure, Intune,
+              virtualization platforms, and monitoring solutions, with a particular interest in
+              network architecture, automation, and infrastructure engineering. Whether
+              troubleshooting a complex connectivity issue, planning a production change, or
+              developing automation tools, I approach every challenge with a focus on root cause
+              analysis, risk management, and long-term maintainability.
             </p>
             <p>
-              It&apos;s still in beta. Every split-pane layout, every credential-handling decision,
-              every rough edge gets sanded down through actually using it on real infrastructure,
-              not hypothetical ones.
+              That same instinct for root-cause thinking is what pulled me toward research and
+              <strong> functional programming</strong>. I&apos;m interested in formal methods, type-safe
+              systems, and using languages like Haskell to make infrastructure changes provably
+              correct before they ever touch production, not just tested after the fact. It&apos;s the
+              same discipline as network troubleshooting, just pushed further upstream.
             </p>
             <p>
-              This site is where I&apos;ll keep writing about that process, plus whatever games notes
-              still show up here. No pressure either way, if something here&apos;s useful to you,
-              that&apos;s the whole point.
+              <strong>Specter</strong> is where the practical side of that shows up: a terminal, file
+              browser, and code editor in one app, built for the way I actually work day to day.
+              Still in beta, still getting sanded down through real use.
             </p>
 
             <a className="tip-btn" href="https://dawnrail.github.io/Dawnrail/">

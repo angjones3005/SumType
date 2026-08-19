@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-export default function PostCard({ tag, tagClass, title, blurb, readTime, category }) {
+export default function PostCard({ tag, tagClass, title, blurb, readTime, category, href }) {
   return (
-    <Link className="card" href="#">
+    <Link className="card" href={href || "#"} target="_blank" rel="noopener noreferrer">
       <div className={`card-tag ${tagClass || ""}`}>
         <span>{tag}</span>
       </div>
