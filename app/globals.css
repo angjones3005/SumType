@@ -221,6 +221,7 @@ nav a.active { color: var(--text); border-color: var(--accent); }
 .post-code { background: #FFFFFF; border: 1px solid var(--border); padding: 18px; overflow-x: auto; color: var(--text); font-family: 'IBM Plex Mono', monospace; font-size: 13px; line-height: 1.7; margin: 26px 0; }
 .paper-figure { margin: 38px 0; }
 .paper-figure img { display: block; width: 100%; max-width: 560px; height: auto; margin: 0 auto; }
+.paper-figure img.ring-figure-image { max-width: 420px; }
 .paper-figure figcaption { color: var(--text-muted); font-size: 12px; line-height: 1.55; margin-top: 12px; }
 .boundary-diagram { height: 230px; display: flex; align-items: center; gap: 28px; }
 .diagram-region { position: relative; height: 180px; border-radius: 4px; flex: 1; }

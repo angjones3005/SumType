@@ -69,7 +69,7 @@ showDay Saturday = "Drink some coffee."
 showDay Sunday   = "Think about things."`}</code></pre>
 
             <figure className="paper-figure">
-              <img src="/figure2_6switch_ring.png" alt="Six-switch ring benchmark split into local region N and remote region R." />
+              <img className="ring-figure-image" src="/figure2_6switch_ring.png" alt="Six-switch ring benchmark split into local region N and remote region R." />
               <figcaption>Figure 2. A six-switch ring split into local region <em>N</em> and remote region <em>R</em>, with two cut edges and the root in <em>R</em>.</figcaption>
             </figure>
 
