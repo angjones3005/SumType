@@ -1,4 +1,4 @@
-# Save Point
+# SumType
 
 A small personal games blog, built with Next.js (App Router).
 

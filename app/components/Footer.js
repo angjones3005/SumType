@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="footer-center">
           <div className="brand">
             <div className="brand-mark"></div>
-            <div className="brand-name">Save Point</div>
+            <div className="brand-name">SumType</div>
           </div>
           <p className="footer-copy">
             &copy; 2026. All written content is personal opinion. Screenshots are my own unless otherwise credited.

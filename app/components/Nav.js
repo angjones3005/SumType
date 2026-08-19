@@ -16,9 +16,6 @@ export default function Nav() {
           <div className="brand-mark"></div>
           <div>
             <div className="brand-name">SumType</div>
-            <div className="brand-sub">
-              <span className="blink"></span>Autosaving your backlog
-            </div>
           </div>
         </Link>
         <nav>

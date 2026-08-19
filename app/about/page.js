@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "About — Save Point",
+  title: "About — SumType",
 };
 
 export default function AboutPage() {
