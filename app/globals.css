@@ -239,6 +239,16 @@ nav a.active { color: var(--text); border-color: var(--accent); }
 .ring-edge { position: absolute; height: 1px; background: var(--text); transform-origin: left center; width: 38%; }.edge-ab { left: 16%; top: 16%; transform: rotate(0deg); }.edge-bc { right: 10%; top: 22%; transform: rotate(68deg); }.edge-cd { right: 24%; bottom: 13%; transform: rotate(155deg); }.edge-de { left: 27%; bottom: 13%; transform: rotate(25deg); }.edge-ef { left: 9%; bottom: 35%; transform: rotate(-72deg); }.edge-fa { left: 15%; top: 28%; transform: rotate(-25deg); }.cut-label { position: absolute; color: var(--accent-dark); font: 10px 'IBM Plex Mono', monospace; }.cut-left { left: 17%; top: 38%; }.cut-right { right: 17%; top: 38%; }.ring-root-label { position: absolute; right: 20%; bottom: 18%; color: var(--accent-dark); font: 10px 'IBM Plex Mono', monospace; }
 .chain-diagram { background: var(--bg-alt); padding: 22px 12px; overflow-x: auto; }.chain-label { display: inline-block; width: 49%; text-align: center; font: 10px 'IBM Plex Mono', monospace; color: var(--text-muted); margin-bottom: 15px; }.chain-row { display: flex; min-width: 540px; justify-content: center; }.chain-node { position: relative; flex: 0 0 36px; margin: 0 4px; }.chain-node:not(:last-child)::after { content: ''; position: absolute; width: 12px; border-top: 1px solid var(--text); left: 35px; top: 15px; }.chain-node.local { background: #D9EAF5; }.chain-node.root-old { background: var(--accent); }.chain-row.second { margin-top: 22px; }.chain-node.root-new { background: var(--accent); }.chain-node.changed { border-color: var(--accent); box-shadow: 0 0 0 3px #F3D8C2; }
 .post-footer-note { border-top: 1px solid var(--border); color: var(--text-muted); font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 1.6; margin-top: 42px; padding-top: 18px; }
+.blog-index-header { max-width: 760px; margin: 0 auto; padding: 56px 0 32px; border-bottom: 1px solid var(--border); }
+.blog-index-header h1 { font-family: 'Space Grotesk', sans-serif; font-size: 52px; line-height: 1.05; letter-spacing: -0.02em; }
+.blog-list { max-width: 760px; margin: 0 auto; padding: 12px 0 80px; }
+.blog-list-item { display: block; border-bottom: 1px solid var(--border); padding: 34px 0 38px; }
+.blog-list-item:last-child { border-bottom: 0; }
+.blog-list-item .eyebrow { margin-bottom: 10px; }
+.blog-list-item h2 { font-family: 'Space Grotesk', sans-serif; font-size: 28px; line-height: 1.2; max-width: 700px; }
+.blog-list-item p { color: var(--text-muted); font-size: 15px; line-height: 1.65; margin-top: 12px; max-width: 650px; }
+.blog-read-link { display: inline-block; color: var(--accent-dark); font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.06em; margin-top: 18px; }
+.blog-list-item:hover h2, .blog-list-item:focus-visible h2 { color: var(--accent-dark); }
 
 /* ---------- FOOTER ---------- */
 footer { border-top: 1px solid var(--border); background: var(--bg-alt); padding: 56px 0 40px; }

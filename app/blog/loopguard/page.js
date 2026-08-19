@@ -87,7 +87,7 @@ safeSnapshot graph config state =
             </p>
 
             <div className="post-footer-note">
-              <a href="/blog">Read the first post: Boundary Sufficiency</a>
+              <a href="/blog/boundary-sufficiency">Read the first post: Boundary Sufficiency</a>
             </div>
           </div>
         </article>
