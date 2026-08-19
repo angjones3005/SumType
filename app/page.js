@@ -32,11 +32,10 @@ export default function HomePage() {
     <main>
       <div className="wrap">
         <section className="hero">
-          <span className="eyebrow">Est. 2024 — a personal games log</span>
-          <h1>Notes on the games that wouldn&apos;t let go.</h1>
+          <span className="eyebrow">Est. 2026</span>
+          <h1>Notes on my life.</h1>
           <p>
-            Not reviews, exactly. More like save files for the moments, mechanics, and
-            soundtracks that stuck around long after the credits rolled.
+            Just talking about things I'm interested in.
           </p>
         </section>
 

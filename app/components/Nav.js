@@ -15,7 +15,7 @@ export default function Nav() {
         <Link href="/" className="brand">
           <div className="brand-mark"></div>
           <div>
-            <div className="brand-name">Save Point</div>
+            <div className="brand-name">SumType</div>
             <div className="brand-sub">
               <span className="blink"></span>Autosaving your backlog
             </div>
