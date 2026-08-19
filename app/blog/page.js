@@ -50,28 +50,7 @@ export default function BlogPage() {
             </div>
 
             <figure className="paper-figure">
-              <div className="boundary-diagram">
-                <div className="diagram-region region-n">
-                  <span className="diagram-label">N</span>
-                  <span className="diagram-node node-n-one">n1</span>
-                  <span className="diagram-node node-n-two">n2</span>
-                  <span className="diagram-line internal-line one"></span>
-                  <span className="diagram-line internal-line two"></span>
-                </div>
-                <div className="boundary-links">
-                  <span></span>
-                  <span></span>
-                </div>
-                <div className="diagram-region region-r">
-                  <span className="diagram-label">R</span>
-                  <span className="diagram-node node-b-one">b1</span>
-                  <span className="diagram-node node-b-two">b2</span>
-                  <span className="diagram-node node-root">root</span>
-                  <span className="diagram-line r-line one"></span>
-                  <span className="diagram-line r-line two"></span>
-                  <span className="diagram-line r-line three"></span>
-                </div>
-              </div>
+              <img src="/figure1_boundary_setup.png" alt="Diagram showing local network N connected across boundary edges to remote network R and its root." />
               <figcaption>Figure 1. A local region <em>N</em> can see the rest of the network <em>R</em> through boundary distances at <em>B</em>.</figcaption>
             </figure>
 
@@ -90,23 +69,7 @@ showDay Saturday = "Drink some coffee."
 showDay Sunday   = "Think about things."`}</code></pre>
 
             <figure className="paper-figure">
-              <div className="ring-diagram">
-                <span className="ring-node ring-a">A</span>
-                <span className="ring-node ring-b">B</span>
-                <span className="ring-node ring-c">C</span>
-                <span className="ring-node ring-d">D</span>
-                <span className="ring-node ring-e">E</span>
-                <span className="ring-node ring-f">F</span>
-                <span className="ring-edge edge-ab"></span>
-                <span className="ring-edge edge-bc"></span>
-                <span className="ring-edge edge-cd"></span>
-                <span className="ring-edge edge-de"></span>
-                <span className="ring-edge edge-ef"></span>
-                <span className="ring-edge edge-fa"></span>
-                <span className="cut-label cut-left">cut</span>
-                <span className="cut-label cut-right">cut</span>
-                <span className="ring-root-label">root</span>
-              </div>
+              <img src="/figure2_6switch_ring.png" alt="Six-switch ring benchmark split into local region N and remote region R." />
               <figcaption>Figure 2. A six-switch ring split into local region <em>N</em> and remote region <em>R</em>, with two cut edges and the root in <em>R</em>.</figcaption>
             </figure>
 
@@ -127,28 +90,7 @@ showDay Sunday   = "Think about things."`}</code></pre>
             </p>
 
             <figure className="paper-figure">
-              <div className="chain-diagram">
-                <span className="chain-label chain-before">root = r5 (far end)</span>
-                <span className="chain-label chain-after">root migrated into N</span>
-                <div className="chain-row">
-                  <span className="chain-node local">N1</span>
-                  <span className="chain-node">r0</span>
-                  <span className="chain-node">r1</span>
-                  <span className="chain-node">r2</span>
-                  <span className="chain-node">r3</span>
-                  <span className="chain-node">r4</span>
-                  <span className="chain-node root-old">r5</span>
-                </div>
-                <div className="chain-row second">
-                  <span className="chain-node local root-new">N1</span>
-                  <span className="chain-node">r0</span>
-                  <span className="chain-node">r1</span>
-                  <span className="chain-node">r2</span>
-                  <span className="chain-node">r3</span>
-                  <span className="chain-node changed">r4</span>
-                  <span className="chain-node">r5</span>
-                </div>
-              </div>
+              <img src="/figure3_chain_construction.png" alt="Chain construction showing a port role changing when the root migrates into local region N." />
               <figcaption>Figure 3. Root migration can change a port role arbitrarily far from the boundary.</figcaption>
             </figure>
 
