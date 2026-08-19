@@ -30,9 +30,11 @@ export default function Nav() {
                 About
               </Link>
             </li>
-            <li><Link href="#">Platforms</Link></li>
-            <li><Link href="#">Reviews</Link></li>
-            <li><Link href="#">Contact</Link></li>
+            <li>
+              <Link href="/blog" className={isActive("/blog") ? "active" : ""}>
+                Blog
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
