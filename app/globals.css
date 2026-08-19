@@ -168,11 +168,11 @@ nav a.active { color: var(--text); border-color: var(--accent); }
 }
 
 /* ---------- ABOUT ---------- */
-.about-head { padding: 56px 0 8px; }
+.about-head { max-width: 760px; margin: 0 auto; padding: 56px 0 8px; }
 .about-head h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 44px; letter-spacing: -0.02em; }
 .about-head .dek { color: var(--text-muted); margin-top: 10px; font-size: 16px; }
 
-.about-grid { display: grid; grid-template-columns: 400px 1fr; gap: 48px; padding: 40px 0 80px; align-items: start; }
+.about-grid { display: block; max-width: 760px; margin: 0 auto; padding: 40px 0 80px; }
 .about-art { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: #EFEAE0; }
 .about-art svg { display: block; width: 100%; height: auto; }
 .about-caption { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--text-muted); margin-top: 10px; }
