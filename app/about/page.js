@@ -35,33 +35,32 @@ export default function AboutPage() {
 
           <div className="about-copy">
             <p>
-              My name&apos;s Sam, and I&apos;m not really a writer either. I just play too many
-              games and think about them for too long afterward.
+              My name&apos;s Angelo, and this blog started as notes on games, but it&apos;s turned into
+              something closer to a build log.
             </p>
             <p>
-              I&apos;ve been playing since I was old enough to hold a controller sideways.
-              Somewhere along the way I started noticing that certain games left a residue: a
-              sound cue, a boss fight, a feeling of being lost in a menu at 2am, and I wanted
-              somewhere to put that down before it faded.
+              I work with network infrastructure day to day, real switches, real SSH sessions,
+              real config that breaks in real ways. Every terminal tool I tried felt like it was
+              built for someone else&apos;s workflow. So I started building my own.
             </p>
             <p>
-              This blog is that somewhere. The goal is simple: write about the games and
-              moments that made the &quot;unforgettable&quot; list in my head, and try to
-              explain why they earned the spot.
+              That became <strong>Specter</strong>, a terminal, file browser, and code editor in one app,
+              designed for the way I actually work: SSH into something, browse the filesystem,
+              edit a file, all without hopping between five different windows.
             </p>
             <p>
-              These aren&apos;t reviews. They&apos;re closer to save files, snapshots of what a
-              game meant to me at the time I played it. I&apos;m mostly doing this to scratch
-              an itch to write, and to keep a record I can look back on.
+              It&apos;s still in beta. Every split-pane layout, every credential-handling decision,
+              every rough edge gets sanded down through actually using it on real infrastructure,
+              not hypothetical ones.
             </p>
             <p>
-              If something here resonates, that&apos;s the whole point. No pressure to do
-              anything else, but if you&apos;d like to leave a tip, there&apos;s a button for
-              that too.
+              This site is where I&apos;ll keep writing about that process, plus whatever games notes
+              still show up here. No pressure either way, if something here&apos;s useful to you,
+              that&apos;s the whole point.
             </p>
 
-            <a className="tip-btn" href="#">
-              <span className="sq"></span> Buy me a coffee
+            <a className="tip-btn" href="https://dawnrail.github.io/Dawnrail/">
+              <span className="sq"></span> Try Specter
             </a>
           </div>
         </div>

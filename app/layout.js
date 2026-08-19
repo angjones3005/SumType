@@ -3,7 +3,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
 export const metadata = {
-  title: "Save Point — a games blog",
+  title: "SumType",
   description: "Notes on the games that wouldn't let go.",
 };
 
