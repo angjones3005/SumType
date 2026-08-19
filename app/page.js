@@ -35,11 +35,15 @@ export default function HomePage() {
     <main>
       <div className="wrap">
         <section className="hero">
-          <span className="eyebrow">Est. 2026</span>
-          <h1>Notes on my life.</h1>
-          <p>
-            Just talking about things I'm interested in.
-          </p>
+          <pre className="hero-code">
+            <code>
+              <span className="code-muted">haskell</span>{"\n\n"}
+              <span className="code-keyword">data</span>{" Weekend = Saturday | Sunday\n\n"}
+              <span className="code-type">showDay</span> :: <span className="code-type">Weekend</span> -&gt; <span className="code-type">String</span>{"\n"}
+              <span className="code-type">showDay</span> Saturday = <span className="code-string">&quot;Drink some coffee.&quot;</span>{"\n"}
+              <span className="code-type">showDay</span> Sunday   = <span className="code-string">&quot;Think about things.&quot;</span>
+            </code>
+          </pre>
         </section>
 
         <section style={{padding: '32px 0', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)'}}>
