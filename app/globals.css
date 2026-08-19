@@ -196,7 +196,7 @@ nav a.active { color: var(--text); border-color: var(--accent); }
 
 /* ---------- FOOTER ---------- */
 footer { border-top: 1px solid var(--border); background: var(--bg-alt); padding: 56px 0 40px; }
-.footer-grid { display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 30px; }
+.footer-grid { display: grid; grid-template-columns: 1fr; gap: 30px; }
 .footer-label {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 10px;
