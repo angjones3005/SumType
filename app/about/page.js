@@ -51,7 +51,7 @@ export default function AboutPage() {
               is being worked down through real use rather than hypothetical infrastructure.
             </p>
 
-            <a className="tip-btn" href="https://dawnrail.github.io/Dawnrail/">
+            <a className="tip-btn" href="https://www.dawnrail.net/">
               <span className="sq"></span> Try Specter
             </a>
           </div>

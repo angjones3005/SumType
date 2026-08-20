@@ -62,7 +62,7 @@ export default function HomePage() {
           <p style={{color: 'var(--text-muted)', marginTop: '10px', maxWidth: '520px'}}>
             Built for real infrastructure work. Currently in beta.
           </p>
-          <a className="tip-btn" href="https://dawnrail.github.io/Dawnrail/" style={{marginTop: '16px'}}>
+          <a className="tip-btn" href="https://www.dawnrail.net/" style={{marginTop: '16px'}}>
             <span className="sq"></span> Check it out
           </a>
         </section>
